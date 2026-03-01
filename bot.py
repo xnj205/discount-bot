@@ -17,7 +17,7 @@ URLS = {
 
 # ----- FUNCTION TO SEND TELEGRAM ALERT -----
 def send_alert(app, mrp, price, discount, product_name=""):
-    message = f"🔥 70%+ OFF!\nApp: {app}\nProduct: {product_name}\nMRP: ₹{mrp}\nPrice: ₹{price}\nDiscount: {round(discount,1)}%"
+    message = f"🔥 40%+ OFF!\nApp: {app}\nProduct: {product_name}\nMRP: ₹{mrp}\nPrice: ₹{price}\nDiscount: {round(discount,1)}%"
     requests.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
                  params={"chat_id": CHAT_ID, "text": message})
 
