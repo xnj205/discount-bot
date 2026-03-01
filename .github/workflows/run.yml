@@ -2,7 +2,7 @@ name: Discount Bot
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # every 10 minutes
+    - cron: "*/10 * * * *"  # runs every 10 minutes
   workflow_dispatch:          # allows manual run
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10  # supported version
+        python-version: 3.10  # use 3.10 or 3.11 (not 3.1)
 
     - name: Install dependencies and Chromium
       run: |
