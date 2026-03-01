@@ -18,8 +18,8 @@ URLS = {
 # ----- FUNCTION TO SEND TELEGRAM ALERT -----
 def send_alert(app, mrp, price, discount, product_name=""):
     message = f"🔥 40%+ OFF!\nApp: {app}\nProduct: {product_name}\nMRP: ₹{mrp}\nPrice: ₹{price}\nDiscount: {round(discount,1)}%"
-    requests.get(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-                 params={"chat_id": CHAT_ID, "text": message})
+    requests.get(f"https://api.telegram.org/bot{AAFoC0VWUIlbtcp6UmSQhgRPY9nQn9t_xYI}/sendMessage",
+                 params={"chat_id": 8771862194, "text": discount})
 
 # ----- FUNCTION TO CHECK PAGE -----
 def check_page(driver, name, url):
